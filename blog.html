@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style2.css">
+ <script src="https://kit.fontawesome.com/dedd6f813d.js" crossorigin="anonymous"></script>
+ <title>Ankan's responsive website</title>
+ <link rel="icon" href="earth.png">
+</head>
+<body onload="loadeee()" >
+<div id="loader"></div>
+ <div class="forebg">
+  
+<header class="hdr">
+
+ <h1>itzankan</h1>
+ <a href="index.html">HOME</a>
+ <a href="blog.html">BLOG</a>
+ <a href="index.html" onclick="myfunnn()">SSL</a>
+ <a href="index.html" onclick="myfun()">HI WASSUP</a>
+ <a href="http://">SOCIAL  MEDIA</a>
+
+</header>
+
+
+
+
+
+
+<script type="text/javascript">
+
+ var load = document.getElementById('loader')
+
+ function loadeee(){
+  load.style.display = 'none';
+ }
+
+
+function myfun(){
+  var str = prompt("HI  MY NAME IS ANKAN. WHAT IS YOURS?", "")
+  alert("HI "  + str + " NICE TO MEET YOU!")
+}
+
+function myfunnn(){
+  var sit = confirm('Click Ok to see SSL Certificate of this website! And Click cancle to not!')
+  if (sit){
+  alert("SSL IS VALIDATED. BECAUSE IT IS FROM GITHUB :)")
+  }
+  else {
+    alert("OK SO YOU DONT WANNA GO THERE.")
+  }
+}
+</script>
+</body>
+</html>

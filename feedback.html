@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>toggle</title>
+</head>
+<body>
+ <div class="centre">
+<div class="container"><form>
+Name
+<input type="text" name="" class="t t1"><br>
+Email
+<input type="text" name="" class="t t2"><br>
+Age
+<input type="text" name="" class="t t3"><br>
+Your message
+<textarea class="ta"></textarea><br>
+Gender
+<input type="text" name="" class="t t4"><br>
+<button class="btn btn1" type="submit" onclick="myfun()">
+SUBMIT
+</button>
+<button class="btn btn2" type="reset" onclick="myfunn()">
+RESET
+</button>
+</form>
+</div>
+ </div>
+ <script>
+  function myfun() {
+   alert("FROM HAS BEEN SUBMITED! THANK YOU FOR SUBMITING!")
+  }
+  function myfunn(){
+ var str = confirm('DO YOU REALLY WANNA WIPE ALL YOUR DATA? CLICK OK TO CONTINUE')
+if(str) {
+ alert("OK YOUR WORK DONE")
+}
+
+
+  }
+ </script>
+</body>
+</html>

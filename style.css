@@ -1,0 +1,80 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.centre {
+ height: 100vh;
+ width: 100vw;
+ background-color: aliceblue;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.container {
+ height: 600px;
+ width: 400px;
+ background-color: white;
+ box-shadow: #c6c6c63b 5px 7px 0px 0px;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ text-align: center;
+font-size: 22px;
+}
+textarea {
+ height: 150px;
+width: 90%;
+resize: none;
+border: 2px black solid;
+outline: hidden;
+box-shadow: yellowgreen 2px 2px 0px 0px;
+}
+.t {
+
+height: 40px;
+width: 95%;
+border: 2px black solid;
+box-shadow: yellowgreen 2px 2px 0px 0px;
+outline: hidden;
+}
+.btn {
+ background: none;
+ border: 2px black solid;
+ font-family: fantasy;
+ width: 25%;
+height: 40px;
+margin: 20px;
+letter-spacing: 2px;
+cursor: pointer;
+position: relative;
+z-index: 1;
+transition: color 0.4s linear;
+overflow: hidden;
+}
+.btn:hover{
+ color: white;
+}
+.btn::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+height: 100%;
+width: 100%;
+z-index: -1;
+transition: transform 0.4s linear;
+
+}
+.btn1::before {
+ background: deepskyblue;
+ transform: translateX(-100%);
+}
+.btn2::before {
+ background: lime;
+ transform: translateY(-100%);
+}
+.btn1:hover::before {
+ transform: translateX(0);
+}
+.btn2:hover::before {
+ transform: translateX(0);
+}

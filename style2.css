@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ background: #a5d5b8;
+}
+.forebg {
+ background-color: #a5d5b8;
+width: 100vw;
+ height: 600px;
+ background-image: url(green-5919790_1920.jpg);
+ background-position: center;
+ background-size: 900px 600px;
+ background-repeat: no-repeat;
+
+}
+.hdr {
+ width: 100%;
+ height: 60px;
+ background-color: #575757;
+display: flex;
+justify-content: space-around;
+
+}
+.hdr h1 {
+ color: red;
+ font-family: Blocktastic;
+ line-height: -10px;
+ margin-left: 5px;
+ transition: letter-spacing .4s linear;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ width: 59%;
+ margin: 10px;
+}
+.hdr h1:hover {
+ letter-spacing: 5px;
+}
+.hdr a {
+ text-decoration: none;
+ font-family: 'oswald' , sans-serif;
+ color: white;
+ margin-top: 10px;
+ position: relative;
+ height: 20px;
+ font-size: 20px;
+margin: 10px;
+text-align: center;
+}
+.hdr a::before {
+ content: '';
+ position: absolute;
+ top: 30%;
+ left: 0;
+ width: 0%;
+ height: 100%;
+ border-bottom: 3px solid rgb(158, 240, 255) ;
+ transition: width 0.4s linear;
+
+}
+.hdr a:hover::before {
+ width: 100%;
+}
+.hone {
+display: grid;
+justify-content: center;
+transform: translateY(230px);
+font-family: 'Montserrat', sans-serif;
+font-size: 50px;
+color: rgb(0, 0, 0);
+}
+#loader {
+ background-image: url(Infinity-1s-200px.gif);
+ width: 100vw;
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-color: #ffffff;
+ z-index: 100000;
+}
